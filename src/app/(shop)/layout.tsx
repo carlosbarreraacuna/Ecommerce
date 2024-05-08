@@ -1,3 +1,5 @@
+import { TopMenu } from "@/app/components/ui/top-menu/TopMenu";
+  
   export default function ShopLayout({
     children,
   }: Readonly<{
@@ -9,7 +11,8 @@
           {/* Puedes agregar metadatos aquí */}
         </head>
         <body>
-          <main className="min-h-screen bg-red-500">{children}</main>
+          <TopMenu/>
+          <main className="min-h-screen">{children}</main>
         </body>
       </html>
     );
